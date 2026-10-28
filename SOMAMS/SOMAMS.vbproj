@@ -1,0 +1,231 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <StartupObject>SOMAMS.My.MyApplication</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Utilities\**" />
+    <EmbeddedResource Remove="Utilities\**" />
+    <None Remove="Utilities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Core.vb" />
+    <Compile Remove="Forms\frmParticipation.Designer.vb" />
+    <Compile Remove="Forms\frmParticipation.vb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Forms\frmParticipation.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net10.0-windows\SOMAMS.deps.json" />
+    <Content Include="bin\Debug\net10.0-windows\SOMAMS.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net10.0-windows\BCrypt-Net-Next.dll" />
+    <None Include="bin\Debug\net10.0-windows\cs\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\cs\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\de\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\de\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\de\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\DocumentFormat.OpenXml.dll" />
+    <None Include="bin\Debug\net10.0-windows\DocumentFormat.OpenXml.Framework.dll" />
+    <None Include="bin\Debug\net10.0-windows\es\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\es\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\es\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\fr\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\fr\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\Humanizer.dll" />
+    <None Include="bin\Debug\net10.0-windows\it\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\it\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\it\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ja\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ja\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ko\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ko\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Bcl.Cryptography.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Build.Locator.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.CodeAnalysis.CSharp.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.CodeAnalysis.CSharp.Workspaces.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.CodeAnalysis.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.CodeAnalysis.Workspaces.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.Extensions.Abstractions.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.Internal.Logging.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.EntityFrameworkCore.Design.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.Office.Interop.Word.dll" />
+    <None Include="bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll" />
+    <None Include="bin\Debug\net10.0-windows\Mono.TextTemplating.dll" />
+    <None Include="bin\Debug\net10.0-windows\MySqlConnector.dll" />
+    <None Include="bin\Debug\net10.0-windows\pl\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\pl\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\Pomelo.EntityFrameworkCore.MySql.dll" />
+    <None Include="bin\Debug\net10.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\pt-BR\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\System.Data.OleDb.dll" />
+    <None Include="bin\Debug\net10.0-windows\ru\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ru\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\SOMAMS.dll" />
+    <None Include="bin\Debug\net10.0-windows\SOMAMS.dll.config" />
+    <None Include="bin\Debug\net10.0-windows\SOMAMS.exe" />
+    <None Include="bin\Debug\net10.0-windows\SOMAMS.pdb" />
+    <None Include="bin\Debug\net10.0-windows\System.Composition.AttributedModel.dll" />
+    <None Include="bin\Debug\net10.0-windows\System.Composition.Convention.dll" />
+    <None Include="bin\Debug\net10.0-windows\System.Composition.Hosting.dll" />
+    <None Include="bin\Debug\net10.0-windows\System.Composition.Runtime.dll" />
+    <None Include="bin\Debug\net10.0-windows\System.Composition.TypedParts.dll" />
+    <None Include="bin\Debug\net10.0-windows\System.Data.OleDb.dll" />
+    <None Include="bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Debug\net10.0-windows\System.Threading.RateLimiting.dll" />
+    <None Include="bin\Debug\net10.0-windows\tr\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\tr\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hans\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hant\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.5.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
+    <PackageReference Include="MySqlConnector" Version="2.6.2" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+    <PackageReference Include="System.Data.OleDb" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Settings.Designer.vb">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
